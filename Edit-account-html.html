@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Clase-1 insert password</title>
+    <title>Edit account</title>
     <style>
            :root{
             --white: #FFFFFF;
@@ -18,6 +18,11 @@
             --sm:14px;
             --md:16px;
             --lg:18px;
+        }
+        h1
+        {
+            font-size: var(--lg);
+            margin-bottom: 40px;
         }
         body{
             font-family: 'Quicksand', sans-serif;
@@ -32,17 +37,23 @@
             place-items: center;
            
         }
-        .container-form
+        .container-form 
         {
             display: grid;
-            grid-template-rows: auto 1fr auto ;
+            grid-template-rows: auto auto 1fr auto;
             width: 300px;
+        }
+        .formulario div
+        {
+            display: flex;
+            flex-direction: column;
         }
         .logo
         {
             width: 150px;
             margin-bottom: 48px;
             place-self: center;
+            margin-inline: 25%;
             display: none;
         }
         
@@ -53,19 +64,16 @@
             font-weight: bold;
             
         }
-        input[type="password"]
+        .name-edit ,
+        .email-edit ,
+        .password-edit
         {
-         margin: 8px;   
-         height: 45px;
-         background-color: var(--text-input-field);
-         border-radius: 6px;
-         border: 0 solid;
-         margin-left: 0;
-         font-weight: bold;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
         }
     
 
-        form
+        .formulario
         {
             display: flex;
             flex-direction: column;
@@ -74,44 +82,36 @@
         }
         input[type="submit"]
         {
-        margin: 8px;   
+         margin: 8px;   
          height: 50px;
-         background-color: var(--text-input-field);
          border-radius: 6px;
-         border: 0 solid;
-         margin-left: 0;
-         background-color: var(--hospital-green);
-         color: var(--white);
+         border: 2px solid;
+         background-color: var(--white);
+         border-color: var(--hospital-green);
+         color: var(--hospital-green);
          font-weight: bold;
         }
-        #sec
+        
+        @media (max-width:640px ) 
         {
-            background-color: var(--white);
-            border: var(--hospital-green) solid;
-            color: var(--hospital-green);
-        }
-        @media (max-width:640px ) {
             .logo
             {
                 display: block;
             }
-            #sec
+            .container-form
             {
-               margin-top: 100px;
+               height: 100%;
             }
+            .formulario
+            {   
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+          
             
-        }
-        a
-        {
-            font-size: var(--sm);
-            text-decoration: none;
-            cursor: var(--hospital-green);
-            color: var(--hospital-green);
-            place-self: center;
-            margin-top: 16px;
-            margin-bottom: 62px;
-        }
-
+            
+       
 
     </style>
 </head>
@@ -119,20 +119,25 @@
     <div class="login">
         <div class="container-form">
             <img src="Logos/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo">
-            <form action="/">
-                <label for="new-password" class="password">
-                    Email address
-                </label>
-                <input type="password" id="new-password" 
-                placeholder="nguerrerovgit@gmail.com" class="input input-password">
-                <label for="re-password" class="password">
-                    Password
-                </label>
-                <input type="password" id="re-password" 
-                placeholder="***********" class="input input-password">
-                <input type="submit" value="Login" id="pri">
-                <a href="/">Forgot my password</a>
-                <input type="submit" value="Sign Up" id="sec">
+            <h1>My account</h1>
+            <form action="/" class="formulario">
+                <div>
+                    <label for="new-password" class="password">
+                        Name
+                    </label>
+                        <p class="name-edit">Nicolas Guerrero</p>
+                    <label for="re-password" class="password">
+                        Email address
+                    </label>
+                    <p class="email-edit">nguerrerovgit@gmail.com</p>
+                    <label for="re-password" class="password">
+                        Password
+                    </label>
+                    <p class="password-edit">**********</p>
+                </div>
+
+                <input type="submit" value="Create" id="pri">
+            
 
                 
             </form>
