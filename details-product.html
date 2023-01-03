@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Nav Yard Sale </title>
+    <style>
+           :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        h1
+        {
+            font-size: var(--lg);
+            padding: 2px;
+            margin: 10px;
+            margin-bottom: 40px;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin:0;
+            }
+        .aside-container
+        {
+            position: absolute;
+            width: 360px;
+            height: auto;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            right: 0;
+            margin: 12px;
+
+
+        }
+        figure
+        {
+            display: flex;
+            padding: 0%;
+            justify-items: flex-start;
+            margin-left: 12px;
+        }
+        figure .product-image
+        {
+            width: auto;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .details-container
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            list-style: none;
+            margin-left: 12px;
+            padding: 0%;
+        }
+        .details-container li:first-child
+        {
+            font-weight: bold;
+
+        }
+        .add-cart
+        {
+            display: flex;
+            flex-direction: row;
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            justify-content: center;
+            margin: 2px;
+        }
+        .add-cart p
+        {
+            color: var(--text-input-field);
+        }
+        
+    </style>
+</head>
+<body>
+   <aside class="aside-container">
+    <figure>
+        <img src="/Product/Bike.jpg" alt="product-image" class="product-image">
+    </figure>
+    <ul class="details-container">
+        <li>$120,00</li>
+        <li>Retro refrigerator</li>
+        <li>
+            <p>
+                <span>With its functional adn practical intererior,</span>
+                <span>this refrigerator also fulfills a decorative function,</span>
+                <span>adding personality and a retro-vintage aesthetic to your kitchen or workplace</span>
+            </p>
+
+        </li>
+
+    </ul>
+
+    <div class="add-cart">
+        <img src="/Icons/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+        <p>Add to cart</p>
+    </div>
+
+   </aside>
+
+</body>
+</html>
