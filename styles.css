@@ -1,0 +1,181 @@
+
+:root{
+ --white: #FFFFFF;
+ --black: #000000;
+ --dark: #232830;
+ --very-light-pink: #C7C7C7;
+ --text-input-field: #F7F7F7;
+ --hospital-green: #ACD9B2;
+ --sm:14px;
+ --md:16px;
+ --lg:18px;
+}
+h1
+{
+ font-size: var(--lg);
+ padding: 2px;
+ margin: 10px;
+ margin-bottom: 40px;
+}
+body{
+ font-family: 'Quicksand', sans-serif;
+ margin:0;
+ }
+.nav-container
+{
+ display: grid;
+ grid-template-columns: 1fr auto ;
+ flex-direction: row;
+ width: 100%+;
+ height: auto;
+ border: 1px solid var(--very-light-pink);
+ margin: 1px;
+ align-content: center;
+
+}
+.menu
+{
+ margin: 12px;
+ padding: 0%;
+ 
+}
+.nav-left
+
+{
+ display: flex;
+ flex-direction: row;
+ grid-column: 1;
+ align-items: center;
+ 
+}
+
+figure
+{
+ margin: 12px;
+}
+.type-products
+{
+ display: flex;
+ flex-direction: row;
+ gap: 12px;
+ justify-content: space-between;
+ list-style: none;
+ align-items: center;
+ 
+}
+
+.type-products li
+{
+ margin-right: 20px;
+}
+.type-products li a
+{
+ text-decoration: none;
+ color: var(--very-light-pink);
+}
+.type-products li:first-child
+{
+ display: inline-block;
+ box-sizing: border-box;
+ border: 1px solid var(--hospital-green);
+ border-radius: 25%;
+ padding: 8px;
+}
+.type-products li:first-child a
+{
+ color: var(--hospital-green) !important;
+
+}
+.nav-rigth
+{
+ display: flex;
+ align-content: center;
+ grid-column: 2;
+ list-style: none;
+ align-content: center;
+
+
+}
+.nav-rigth ul
+{
+ display: flex;
+ flex-direction: row;
+
+
+}
+.nav-rigth ul li
+{
+ margin: 12px;
+ list-style: none;
+}
+.nav-email
+{
+ color: var(--very-light-pink);
+}
+.shopping-car
+{
+ position: relative;
+ 
+}
+.shopping-car div
+{
+ text-align: center;
+ width: 16px;
+ height: 16px;
+ box-sizing: border-box;
+ position: absolute;
+ font-size: var(--sm);
+ background-color: var(--hospital-green);
+ border-radius: 50%;
+ top: -10px;
+ right: -5px;
+ font-weight: bold;
+
+}
+.arrow
+{
+ margin-left: 10px;
+ transform: rotate(90deg);
+}
+.menu
+{
+ display: none;
+}
+@media (max-width:640px) {
+
+ .nav-container
+ {
+     grid-template-columns: 1fr 1fr ;
+
+     justify-content: center;
+
+ }
+ .nav-left
+ {
+     justify-content: space-between;
+
+ }
+ .nav-rigth           
+  {
+     justify-content: flex-end;
+
+ }
+
+
+ .type-products
+ {
+     display: none;
+
+ }
+ .nav-email
+ {
+     display: none;
+ }
+ .arrow
+ {
+     display: none;
+ }
+ 
+ 
+}
+
