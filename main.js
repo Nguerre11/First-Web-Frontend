@@ -12,4 +12,6 @@ function block()
 function blocks()
 {
     menuMobile.classList.toggle('inactive');
+
 }
+
