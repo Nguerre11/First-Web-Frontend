@@ -85,12 +85,17 @@ for (in) and for (of )
 >code ./ -r // to Approach to create a folder inside vs code currently
 .vscode // .gitignore
 
-##Targets to lesson 🧠
-    1. Fusion html menu-navmenu
-    2. menu nav placed by css 
-    3. event wiht js 
-
+##Targets to lesson 🧠 
+    1. to display none if mobile-Open !x2✅
+    2.to display none if  desktop-menu Open x1 :che
+    3.to display block if click card-icon ✅
+##List cards-products
+    1.Create array complete
+    2.Create elements to layout 
+    3.Layout as like html 
+    4. Save through
     
+##What did I learn?
        
 
 
