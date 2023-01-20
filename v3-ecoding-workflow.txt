@@ -94,6 +94,10 @@ for (in) and for (of )
     2.Create elements to layout 
     3.Layout as like html 
     4. Save through
+##details-product-toggle
+    1.to open with any product and close with X ✅
+    2.to display none if Mobile-desktop-Cart-Open 
+    3.responsive design with 100%
     
 ##What did I learn?
        
